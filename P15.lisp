@@ -1,0 +1,6 @@
+(defun repli (lst i)
+  (let (result)
+    (dolist (item lst)
+      (dotimes (x i)
+	(setf result (cons item result))))
+    (reverse result)))

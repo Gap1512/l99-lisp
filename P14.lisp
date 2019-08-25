@@ -1,0 +1,5 @@
+(defun dupli (lst)
+  (let (result)
+    (dolist (i lst)
+      (setf result (append (list i i) result)))
+    (reverse result)))
